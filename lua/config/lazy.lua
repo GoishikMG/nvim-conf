@@ -1,5 +1,3 @@
-require('config.mappings')
-
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
@@ -24,5 +22,8 @@ require("lazy").setup({
 			-- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
 		}
 	},
-	{'nvim-treesitter/nvim-treesitter'}
+	{'nvim-treesitter/nvim-treesitter'}, 
+	{'neovim/nvim-lspconfig'},
+ 	{'joshdick/onedark.vim'},
+        {'rebelot/kanagawa.nvim'},
 })
