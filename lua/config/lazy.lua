@@ -25,5 +25,6 @@ require("lazy").setup({
 	{'nvim-treesitter/nvim-treesitter'}, 
 	{'neovim/nvim-lspconfig'},
  	{'joshdick/onedark.vim'},
-        {'rebelot/kanagawa.nvim'},
+    {'rebelot/kanagawa.nvim'},
+    {'s1n7ax/nvim-window-picker'},
 })
