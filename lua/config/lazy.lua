@@ -29,4 +29,5 @@ require("lazy").setup({
     {'s1n7ax/nvim-window-picker'},
     {'hrsh7th/cmp-nvim-lsp'}, {'hrsh7th/cmp-buffer'}, {'hrsh7th/cmp-path'},
     {'hrsh7th/cmp-cmdline'}, {'hrsh7th/nvim-cmp'}, {'lewis6991/gitsigns.nvim'},
+    {"williamboman/mason.nvim", build = ":MasonUpdate"},
 })
