@@ -36,4 +36,5 @@ require("lazy").setup({
     {'hrsh7th/cmp-cmdline'}, {'hrsh7th/nvim-cmp'}, {'lewis6991/gitsigns.nvim'},
     {"williamboman/mason.nvim", build = ":MasonUpdate"},
     {'jose-elias-alvarez/null-ls.nvim'},
+    {'windwp/nvim-autopairs'},
 })
