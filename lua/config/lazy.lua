@@ -37,4 +37,5 @@ require("lazy").setup({
     {"williamboman/mason.nvim", build = ":MasonUpdate"},
     {'jose-elias-alvarez/null-ls.nvim'},
     {'windwp/nvim-autopairs'},
+    {'windwp/nvim-ts-autotag'},
 })
