@@ -41,4 +41,9 @@ require("lazy").setup({
     {'lewis6991/gitsigns.nvim'},
     {'mbbill/undotree'},
     {'phaazon/hop.nvim'},
+    {
+        "ThePrimeagen/harpoon",
+        branch = "harpoon2",
+        dependencies = { "nvim-lua/plenary.nvim" }
+    },
 })
