@@ -46,4 +46,5 @@ require("lazy").setup({
         branch = "harpoon2",
         dependencies = { "nvim-lua/plenary.nvim" }
     },
+    {'yioneko/nvim-yati'},
 })
