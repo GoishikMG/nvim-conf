@@ -8,13 +8,7 @@ lspconfig.cssls.setup {
     capabilities = capabilities
 }
 lspconfig.golangci_lint_ls.setup {}
-lspconfig.phpactor.setup{
-    on_attach = on_attach,
-    init_options = {
-        ["language_server_phpstan.enabled"] = false,
-        ["language_server_psalm.enabled"] = false,
-    }
-}
+lspconfig.intelephense.setup {}
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 vim.keymap.set('n', '<leader>lD', vim.diagnostic.open_float)
