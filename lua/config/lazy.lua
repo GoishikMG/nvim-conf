@@ -47,4 +47,5 @@ require("lazy").setup({
         dependencies = { "nvim-lua/plenary.nvim" }
     },
     {'yioneko/nvim-yati'},
+    {'MunifTanjim/prettier.nvim'}
 })
