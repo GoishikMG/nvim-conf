@@ -2,7 +2,7 @@
 
 ### Requirements
 
-* [Neovim v0.9.5+](https://github.com/neovim/neovim/releases/tag/stable)
+* [Neovim v0.10.5+](https://github.com/neovim/neovim/releases/tag/stable)
 * [Nerd Fonts](https://www.nerdfonts.com/font-downloads)
 * [Ripgrep](https://github.com/BurntSushi/ripgrep)
 * [PHP](https://www.php.net/manual/en/install.php)
