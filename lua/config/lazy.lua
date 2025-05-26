@@ -30,7 +30,10 @@ require("lazy").setup({
 	{'nvim-treesitter/nvim-treesitter'}, 
 	{'neovim/nvim-lspconfig'},
  	{'joshdick/onedark.vim'},
-    {'rebelot/kanagawa.nvim'},
+    {
+        'rebelot/kanagawa.nvim',
+        'folke/tokyonight.nvim',
+    },
     {'s1n7ax/nvim-window-picker'},
     {'hrsh7th/cmp-nvim-lsp'}, {'hrsh7th/cmp-buffer'}, {'hrsh7th/cmp-path'},
     {'hrsh7th/cmp-cmdline'}, {'hrsh7th/nvim-cmp'}, {'lewis6991/gitsigns.nvim'},
