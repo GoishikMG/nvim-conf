@@ -8,6 +8,7 @@
 * [Ripgrep](https://github.com/BurntSushi/ripgrep)
 * [PHP](https://www.php.net/manual/en/install.php)
 * [Node.js](https://nodejs.org/en/download/package-manager)
+* [Intelephense](https://www.npmjs.com/package/intelephense)
 
 ### Make a backup of your current nvim config (if exists)
 
