@@ -10,6 +10,12 @@
 * [Node.js](https://nodejs.org/en/download/package-manager)
 * [Intelephense](https://www.npmjs.com/package/intelephense)
 
+### Install Xclip 
+
+```shell
+sudo apt install xclip
+```
+
 ### Make a backup of your current nvim config (if exists)
 
 ```shell
