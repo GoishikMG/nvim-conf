@@ -7,7 +7,6 @@ lspconfig.html.setup {}
 lspconfig.cssls.setup {
     capabilities = capabilities
 }
-lspconfig.golangci_lint_ls.setup {}
 lspconfig.intelephense.setup {}
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
