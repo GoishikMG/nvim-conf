@@ -2,26 +2,15 @@
 
 ### Requirements
 
-* [Neovim v0.10.5+](https://github.com/neovim/neovim/releases/tag/stable)
-* [Lua](https://www.lua.org/start.html)
+* [Neovim v0.11.0+](https://github.com/neovim/neovim/releases/tag/stable)
 * [Nerd Fonts](https://www.nerdfonts.com/font-downloads)
 * [Ripgrep](https://github.com/BurntSushi/ripgrep)
-* [PHP](https://www.php.net/manual/en/install.php)
+* [Xclip](https://github.com/astrand/xclip)
 * [Pphactor](https://phpactor.readthedocs.io/en/master/usage/standalone.html)
-* [Node.js](https://nodejs.org/en/download/package-manager)
-* [Go](https://go.dev/doc/install)
-
-### Install Xclip 
-
-```shell
-sudo apt install xclip
-```
-
-### Install gopls 
-
-```shell
-go install golang.org/x/tools/gopls@latest
-```
+* [TypeScript Language Server](https://github.com/typescript-language-server/typescript-language-server)
+* [Vscode Langservers Extracted](https://github.com/hrsh7th/vscode-langservers-extracted)
+* [Gopls](https://go.dev/gopls/#installation)
+* [Lua Language Server](https://github.com/luals/lua-language-server)
 
 ### Make a backup of your current nvim config (if exists)
 
