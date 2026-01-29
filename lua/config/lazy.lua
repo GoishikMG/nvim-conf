@@ -27,7 +27,6 @@ require("lazy").setup({
 			-- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
 		},
 	},
-	{'nvim-treesitter/nvim-treesitter'}, 
 	{'neovim/nvim-lspconfig'},
  	{'joshdick/onedark.vim'},
     {
@@ -48,6 +47,5 @@ require("lazy").setup({
         branch = "harpoon2",
         dependencies = { "nvim-lua/plenary.nvim" }
     },
-    {'yioneko/nvim-yati'},
     {'hrsh7th/vim-vsnip'}
 })
