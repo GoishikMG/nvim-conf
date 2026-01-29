@@ -25,9 +25,6 @@ vim.opt.relativenumber = true
 vim.opt.splitbelow = true
 vim.opt.splitright = true
 
--- Clipboard
-vim.api.nvim_set_option("clipboard", "unnamedplus")
-
 -- Shorter messages
 vim.opt.shortmess:append("c")
 
