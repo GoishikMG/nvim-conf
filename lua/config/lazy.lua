@@ -47,7 +47,6 @@ require("lazy").setup({
     {'jose-elias-alvarez/null-ls.nvim'},
     {'windwp/nvim-autopairs'},
     {'windwp/nvim-ts-autotag'},
-    {'lewis6991/gitsigns.nvim'},
     {'phaazon/hop.nvim'},
     {
         "ThePrimeagen/harpoon",

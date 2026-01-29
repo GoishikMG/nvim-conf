@@ -10,7 +10,6 @@ require("plugins.telescope")
 require("plugins.nullls")
 require("plugins.autopairs")
 require("plugins.autotag")
-require("plugins.gitsigns")
 require("plugins.hop")
 require("plugins.harpoon")
 
