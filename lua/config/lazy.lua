@@ -42,15 +42,13 @@ require("lazy").setup({
         'folke/tokyonight.nvim',
     },
     {'s1n7ax/nvim-window-picker'},
-    {'hrsh7th/cmp-nvim-lsp'}, {'hrsh7th/cmp-buffer'}, {'hrsh7th/cmp-path'},
-    {'hrsh7th/cmp-cmdline'}, {'hrsh7th/nvim-cmp'}, {'lewis6991/gitsigns.nvim'},
+    {'hrsh7th/cmp-nvim-lsp'},
+    {'hrsh7th/cmp-buffer'},
+    {'hrsh7th/cmp-path'},
+    {'hrsh7th/cmp-cmdline'},
+    {'hrsh7th/nvim-cmp'},
+    {'hrsh7th/vim-vsnip'},
     {'windwp/nvim-autopairs'},
     {'windwp/nvim-ts-autotag'},
     {'phaazon/hop.nvim'},
-    {
-        "ThePrimeagen/harpoon",
-        branch = "harpoon2",
-        dependencies = { "nvim-lua/plenary.nvim" }
-    },
-    {'hrsh7th/vim-vsnip'}
 })
