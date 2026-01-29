@@ -13,9 +13,12 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
     {
-        'nvim-telescope/telescope.nvim',
-        tag = '0.1.4',
-        dependencies = {'nvim-lua/plenary.nvim'}
+        'nvim-telescope/telescope.nvim', version = '*',
+        dependencies = {
+            'nvim-lua/plenary.nvim',
+            -- optional but recommended
+            { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
+        }
     },
     {
 		"nvim-neo-tree/neo-tree.nvim",
@@ -27,6 +30,11 @@ require("lazy").setup({
 			-- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
 		},
 	},
+    {
+        'nvim-treesitter/nvim-treesitter',
+        lazy = false,
+        build = ':TSUpdate',
+    },
 	{'neovim/nvim-lspconfig'},
  	{'joshdick/onedark.vim'},
     {
@@ -40,7 +48,6 @@ require("lazy").setup({
     {'windwp/nvim-autopairs'},
     {'windwp/nvim-ts-autotag'},
     {'lewis6991/gitsigns.nvim'},
-    {'mbbill/undotree'},
     {'phaazon/hop.nvim'},
     {
         "ThePrimeagen/harpoon",
