@@ -17,6 +17,7 @@ require("plugins.harpoon")
 
 vim.lsp.enable({
     "phpactor",
+    "lua_ls",
     "ts_ls",
     "html",
     "cssls",
