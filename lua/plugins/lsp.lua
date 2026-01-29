@@ -45,6 +45,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
     end
 })
 
+vim.lsp.enable({"phpactor"})
 vim.diagnostic.config({
   virtual_text = true,
   signs = true,

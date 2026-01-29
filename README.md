@@ -7,6 +7,7 @@
 * [Nerd Fonts](https://www.nerdfonts.com/font-downloads)
 * [Ripgrep](https://github.com/BurntSushi/ripgrep)
 * [PHP](https://www.php.net/manual/en/install.php)
+* [Pphactor](https://phpactor.readthedocs.io/en/master/usage/standalone.html)
 * [Node.js](https://nodejs.org/en/download/package-manager)
 * [Go](https://go.dev/doc/install)
 * [Intelephense](https://www.npmjs.com/package/intelephense)
