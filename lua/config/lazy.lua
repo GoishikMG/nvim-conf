@@ -36,8 +36,6 @@ require("lazy").setup({
         build = ':TSUpdate',
     },
     {'neovim/nvim-lspconfig'},
-    {'joshdick/onedark.vim'},
-    {'rebelot/kanagawa.nvim'},
     {'folke/tokyonight.nvim'},
     {'hrsh7th/cmp-nvim-lsp'},
     {'hrsh7th/cmp-buffer'},
