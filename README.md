@@ -6,6 +6,8 @@
 * [Nerd Fonts](https://www.nerdfonts.com/font-downloads)
 * [Ripgrep](https://github.com/BurntSushi/ripgrep)
 * [Xclip](https://github.com/astrand/xclip)
+* [GCC](https://gcc.gnu.org/install/)
+* [Tree-sitter CLI](https://github.com/tree-sitter/tree-sitter/blob/master/crates/cli/README.md)
 * [Pphactor](https://phpactor.readthedocs.io/en/master/usage/standalone.html)
 * [TypeScript Language Server](https://github.com/typescript-language-server/typescript-language-server)
 * [Vscode Langservers Extracted](https://github.com/hrsh7th/vscode-langservers-extracted)
