@@ -2,7 +2,7 @@
 
 ### Requirements
 
-* [Neovim v0.11.0+](https://github.com/neovim/neovim/releases/tag/stable)
+* [Neovim v0.11.0+](https://neovim.io/doc/install/)
 * [Nerd Fonts](https://www.nerdfonts.com/font-downloads)
 * [Ripgrep](https://github.com/BurntSushi/ripgrep)
 * [Xclip](https://github.com/astrand/xclip)
