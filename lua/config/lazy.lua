@@ -46,5 +46,6 @@ require("lazy").setup({
     {'windwp/nvim-autopairs'},
     {'windwp/nvim-ts-autotag'},
     {'phaazon/hop.nvim'},
+    {'mbbill/undotree'},
     {'lewis6991/gitsigns.nvim'},
 })
