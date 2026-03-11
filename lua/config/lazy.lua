@@ -48,4 +48,8 @@ require("lazy").setup({
     {'phaazon/hop.nvim'},
     {'mbbill/undotree'},
     {'lewis6991/gitsigns.nvim'},
+    {
+        'nvim-lualine/lualine.nvim',
+        dependencies = { 'nvim-tree/nvim-web-devicons' }
+    },
 })
