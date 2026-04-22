@@ -4,7 +4,6 @@ require("config.mappings")
 require("config.config")
 require("config.colors")
 
-require("plugins.neotree")
 require("plugins.treesitter")
 require("plugins.cmp")
 require("plugins.autopairs")
