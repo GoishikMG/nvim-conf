@@ -2,7 +2,7 @@
 
 ### Requirements
 
-* [Neovim v0.11.0+](https://neovim.io/doc/install/)
+* [Neovim v0.12.0+](https://neovim.io/doc/install/)
 * [build-essential packages](https://packages.debian.org/sid/build-essential)
 * [Ripgrep](https://github.com/BurntSushi/ripgrep)
 * [Xclip](https://github.com/astrand/xclip)

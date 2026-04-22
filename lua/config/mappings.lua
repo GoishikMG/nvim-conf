@@ -8,17 +8,6 @@ vim.keymap.set("n", "N", "Nzzzv")
 -- Neotree
 vim.keymap.set('n', '<leader>e', ':Ex<CR>')
 
--- Hop
-local hop = require('hop')
-local directions = require('hop.hint').HintDirection
-
-vim.keymap.set('', 'f', function()
-    hop.hint_char1({ direction = directions.AFTER_CURSOR, current_line_only = true })
-end, {remap=true})
-vim.keymap.set('', 'F', function()
-    hop.hint_char1({ direction = directions.BEFORE_CURSOR, current_line_only = true })
-end, {remap=true})
-
 --Telescope
 local builtin = require('telescope.builtin')
 
@@ -35,4 +24,4 @@ vim.keymap.set('n', 'gr', builtin.lsp_references, {noremap = true, silent = true
 vim.keymap.set('n', 'gd', builtin.lsp_definitions, {noremap = true, silent = true})
 
 -- Undotree
-vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle)
+vim.keymap.set('n', '<leader>u', ':Undotree<CR>')
