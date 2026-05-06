@@ -4,36 +4,67 @@ vim.lsp.enable({
     "ts_ls",
     "html",
     "cssls",
-    "gopls"
 })
 
-vim.diagnostic.config({
-  virtual_text = true,
-  signs = true,
-  update_in_insert = false,
-  underline = true,
-  severity_sort = false,
-  float = true,
+vim.lsp.config('lua_ls', {
+    on_init = function(client)
+        if client.workspace_folders then
+            local path = client.workspace_folders[1].name
+            if
+                path ~= vim.fn.stdpath('config')
+                and (vim.uv.fs_stat(path .. '/.luarc.json') or vim.uv.fs_stat(path .. '/.luarc.jsonc'))
+            then
+                return
+            end
+        end
+
+        client.config.settings.Lua = vim.tbl_deep_extend('force', client.config.settings.Lua, {
+            runtime = {
+                -- Tell the language server which version of Lua you're using (most
+                -- likely LuaJIT in the case of Neovim)
+                version = 'LuaJIT',
+                -- Tell the language server how to find Lua modules same way as Neovim
+                -- (see `:h lua-module-load`)
+                path = {
+                    'lua/?.lua',
+                    'lua/?/init.lua',
+                },
+            },
+            -- Make the server aware of Neovim runtime files
+            workspace = {
+                checkThirdParty = false,
+                library = {
+                    vim.env.VIMRUNTIME,
+                    -- Depending on the usage, you might want to add additional paths
+                    -- here.
+                    -- '${3rd}/luv/library',
+                    -- '${3rd}/busted/library',
+                },
+                -- Or pull in all of 'runtimepath'.
+                -- NOTE: this is a lot slower and will cause issues when working on
+                -- your own configuration.
+                -- See https://github.com/neovim/nvim-lspconfig/issues/3189
+                -- library = vim.api.nvim_get_runtime_file('', true),
+            },
+        })
+    end,
+    settings = {
+        Lua = {},
+    },
 })
 
-vim.opt.completeopt = "menu,menuone,noselect,popup" -- Ensures the menu appears even for a single match and uses the native popup window.
-vim.o.autocomplete = true -- Enables the overall completion feature.
+vim.o.autocomplete = true
 
-vim.api.nvim_create_autocmd("LspAttach", {
-  group = vim.api.nvim_create_augroup("lsp_completion", { clear = true }),
-  callback = function(args)
-    local client_id = args.data.client_id
-    if not client_id then
-      return
-    end
-
-    local client = vim.lsp.get_client_by_id(client_id)
-    if client and client:supports_method("textDocument/completion") then
-      -- Enable native LSP completion for this client + buffer
-      vim.lsp.completion.enable(true, client_id, args.buf, {
-        autotrigger = true,   -- auto-show menu as you type (recommended)
-        -- You can also set { autotrigger = false } and trigger manually with <C-x><C-o>
-      })
-    end
-  end,
+vim.api.nvim_create_autocmd('LspAttach', {
+    group = vim.api.nvim_create_augroup('my.lsp', {}),
+    callback = function(ev)
+        local client = assert(vim.lsp.get_client_by_id(ev.data.client_id))
+        if client:supports_method('textDocument/completion') then
+            vim.lsp.completion.enable(true, client.id, ev.buf, {autotrigger = true})
+        end
+    end,
 })
+
+vim.opt.complete:append('o')
+vim.opt.completeopt = { 'menuone', 'noselect'}
+vim.o.pumborder = 'rounded'
