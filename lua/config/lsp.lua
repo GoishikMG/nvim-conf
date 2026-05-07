@@ -68,3 +68,8 @@ vim.api.nvim_create_autocmd('LspAttach', {
 vim.opt.complete:append('o')
 vim.opt.completeopt = { 'menuone', 'noselect'}
 vim.o.pumborder = 'rounded'
+
+vim.diagnostic.config({
+  virtual_text = false,
+  virtual_lines = { only_current_line = true },
+})
