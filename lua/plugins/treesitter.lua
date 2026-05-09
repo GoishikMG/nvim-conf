@@ -1,5 +1,5 @@
-local parsers = { 'php', 'tsx', 'jsx', 'html', 'css', 'twig', 'json', 'bash', 'yaml', 'xml' }
-local fileTypes = { 'php', 'js', 'ts', 'tsx', 'jsx', 'html', 'css', 'twig', 'json', 'sh', 'yaml', 'xml' }
+local parsers = { 'php', 'tsx', 'jsx', 'html', 'css', 'twig', 'json', 'bash', 'yaml', 'xml', }
+local fileTypes = { 'php', 'html', 'css', 'twig', 'json', 'sh', 'yaml', 'xml', 'typescript', 'typescriptreact', 'typescript.tsx', 'javascriptreact', 'javascript.jsx', 'javascript' }
 
 require('nvim-treesitter').install(parsers)
 
